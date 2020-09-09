@@ -1,0 +1,25 @@
+{
+  "name": "postcss-px-vw",
+  "version": "1.0.0-beta.0",
+  "description": "PostCSS plugin which transfer px to vw when use pv unit directly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pomelott/postcss-px2vw.git"
+  },
+  "keywords": [
+    "postcss",
+    "plugin",
+    "px2vw",
+    "pv"
+  ],
+  "author": "pomelott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pomelott/postcss-px2vw/issues"
+  },
+  "homepage": "https://github.com/pomelott/postcss-px2vw#readme"
+}
