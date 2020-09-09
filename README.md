@@ -35,7 +35,6 @@ PostCSS plugin which transfer px to vw when use pv unit directly
 
 * then set the options of your design draft or use default.
 * when the width of a div is '500px', then use '500pv' to replace it.
-* you can replace 'vmin/vmax' with 'pvmin/pvmax'.
 
 ## Samples
 
@@ -44,7 +43,6 @@ PostCSS plugin which transfer px to vw when use pv unit directly
 ```css
     .box {
         width: 500pv;
-        width: 200pvmin;
     }
 ```
 
@@ -53,6 +51,5 @@ PostCSS plugin which transfer px to vw when use pv unit directly
 ```css
     .box {
         width: 66.666667vw;
-        width: 26.666667vmin;
     }
 ```
