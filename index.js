@@ -1,16 +1,18 @@
 const postcss = require('postcss');
-
+const {parseValue, checkUnit} = require('./lib/util')
 const defaultConf = {
-  filename: 'retina-border',
-  pxRange: 2,
-  dprRange: 3,
-  selector: '.retina-border-%dpx'
+  width: 750,
+  decimal: 6
 }
-module.exports = postcss.plugin('postcss-retina-px-border', function (opts) {
+module.exports = postcss.plugin('postcss-px2vw-pv', function (opts) {
   opts = Object.assign({}, defaultConf, opts);
+  opts.width = Number(opts.width);
+  opts.decimal = Number(opts.decimal);
   return async function (root, finalResult) {
-      let filename = getFileName(root.source.input.file);
-      if (filename === opts.filename) {
-      }
+        root.walkDecls(decl => {
+          if (checkUnit(decl.value)) {
+            decl.value = parseValue(decl.value, opts);
+          }
+        })
   };
 });
