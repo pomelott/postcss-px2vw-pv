@@ -43,6 +43,7 @@ PostCSS plugin which transfer px to vw when use pv unit directly
 ```css
     .box {
         width: 500pv;
+        transform: translateX(10pv);
     }
 ```
 
@@ -51,5 +52,6 @@ PostCSS plugin which transfer px to vw when use pv unit directly
 ```css
     .box {
         width: 66.666667vw;
+        transform: translateX(1.333333vw);
     }
 ```
