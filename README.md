@@ -16,7 +16,7 @@ PostCSS plugin which transfer px to vw when use pv unit directly
 
 ## Options
 
-| option | type | default | description n
+| option | type | default | description |
 |:---:|:---:|:---:|:---:|
 | width | number | 750 | the px-width of design draft |
 | decimal | number | 6 | number of reserved decimal places |
