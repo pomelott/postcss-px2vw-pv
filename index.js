@@ -2,7 +2,7 @@ const postcss = require('postcss');
 const {parseValue, checkUnit} = require('./lib/util')
 const defaultConf = {
   width: 750,
-  decimal: 6,
+  decimal: 4,
   comment: true
 }
 
