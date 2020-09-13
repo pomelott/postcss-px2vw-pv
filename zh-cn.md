@@ -8,11 +8,9 @@
 
 # postcss-px2vw-pv
 
- [Doc ZH-CN 🇨🇳](https://github.com/pomelott/postcss-px2vw-pv/blob/master/zh-cn.md)
+Postcss 插件：使用 pv 将 px 分析转化为 vw
 
-PostCSS plugin which transfer px to vw when use pv unit directly.
-
-* if like this, could you please ⭐️star⭐ on github
+* 如若喜欢，请 点赞赐星 ！
 
 ## Install
 
@@ -26,15 +24,15 @@ PostCSS plugin which transfer px to vw when use pv unit directly.
 
 ## Options
 
-| option | type | default | description |
+| 选项 | 类型 | 默认 | 描述 |
 |:---:|:---:|:---:|:---:|
-| width | number | 750 | the px-width of design draft |
-| decimal | number | 4 | number of reserved decimal places |
-| comment | boolean | true | whether to create the comment |
+| width | number | 750 | 设计稿的像素宽度 |
+| decimal | number | 4 | 小数点的保留位数 |
+| comment | boolean | true | 是否生成插件注释 |
 
 ## Fast use
 
-* first to add the plugin to postcss.
+* 首先增加，并配置postcss插件
 
 ```js
     module.exports = {
@@ -44,12 +42,12 @@ PostCSS plugin which transfer px to vw when use pv unit directly.
     }
 ```
 
-* then set the options of your design draft or use default.
-* when the width/height of a div is '500px', then use '500pv' to replace it.
+* 然后配置设计稿的像素宽度，或使用默认配置
+* 例如 设计稿的某个宽度或高度为 ’500px‘， 使用 ’500pv‘ 去替代它
 
-## Samples
+## 样例
 
-* with a design draft of 750
+* 750 设计稿下样式举例：
 
 ```css
     @keyframes ani {
@@ -67,7 +65,7 @@ PostCSS plugin which transfer px to vw when use pv unit directly.
     }
 ```
 
-* the sample above transferred to:
+* 上述样式被转化为:
 
 ```css
     @keyframes ani {

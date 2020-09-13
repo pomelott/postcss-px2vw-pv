@@ -1,6 +1,6 @@
 {
   "name": "postcss-px2vw-pv",
-  "version": "1.1.2",
+  "version": "1.1.7",
   "description": "PostCSS plugin which transfer px to vw when use pv unit directly",
   "main": "index.js",
   "scripts": {
