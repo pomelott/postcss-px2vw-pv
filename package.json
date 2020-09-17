@@ -1,10 +1,10 @@
 {
   "name": "postcss-px2vw-pv",
-  "version": "1.1.7",
+  "version": "1.2.1-beta.0",
   "description": "PostCSS plugin which transfer px to vw when use pv unit directly",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest --clearCache && npx jest  __test__/index.test.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,9 @@
     "postcss",
     "plugin",
     "px2vw",
-    "pv"
+    "pv",
+    "rem",
+    "remMigration"
   ],
   "author": "pomelott",
   "license": "MIT",
@@ -23,6 +25,10 @@
   },
   "homepage": "https://github.com/pomelott/postcss-px2vw-pv#readme",
   "dependencies": {
+    "lodash": "^4.17.20",
     "postcss": "^7.0.32"
+  },
+  "devDependencies": {
+    "jest-cli": "25"
   }
 }
